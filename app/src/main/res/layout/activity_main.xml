@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="18dp">
+
+        <TextView
+            style="@style/Calc_Text_Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2+2"
+            android:id="@+id/text_input"/>
+
+        <TextView
+            style="@style/Calc_Text_Answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/text_answer"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="408dp"
+        android:layout_height="450dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tableLayout">
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_delete"
+                style="@style/Calc_Button_Delete"
+                android:text="Del" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_bracket_open"
+                style="@style/Calc_Button_Action"
+                android:text="(" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_bracket_closed"
+                style="@style/Calc_Button_Action"
+                android:text=")" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_division"
+                style="@style/Calc_Button_Action"
+                android:text="/" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_seven"
+                style="@style/Calc_Button_Digit"
+                android:text="7" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_eight"
+                style="@style/Calc_Button_Digit"
+                android:text="8" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_nine"
+                style="@style/Calc_Button_Digit"
+                android:text="9" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_multiplication"
+                style="@style/Calc_Button_Action"
+                android:text="*" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_four"
+                style="@style/Calc_Button_Digit"
+                android:text="4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_five"
+                style="@style/Calc_Button_Digit"
+                android:text="5" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_six"
+                style="@style/Calc_Button_Digit"
+                android:text="6" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_subtraction"
+                style="@style/Calc_Button_Action"
+                android:text="-" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_one"
+                style="@style/Calc_Button_Digit"
+                android:text="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_two"
+                style="@style/Calc_Button_Digit"
+                android:text="2" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_three"
+                style="@style/Calc_Button_Digit"
+                android:text="3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_addition"
+                style="@style/Calc_Button_Action"
+                android:text="+" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_ac"
+                style="@style/Calc_Button_Delete"
+                android:text="AC" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_zero"
+                style="@style/Calc_Button_Digit"
+                android:text="0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_point"
+                style="@style/Calc_Button_Digit"
+                android:text="." />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_equality"
+                style="@style/Calc_Button_Action"
+                android:text="=" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

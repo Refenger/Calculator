@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <style name="Calc_Button_Delete" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">#FFC4C4</item>
+        <item name="android:textColor">#FF0000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="Calc_Button_Action" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">#E8A84F</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="Calc_Button_Digit" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:background">#FFDCB4</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="Calc_Text_Input" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">#dddddd</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:background">#000000</item>
+    </style>
+
+    <style name="Calc_Text_Answer" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">#FFA650</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:background">#000000</item>
+    </style>
+</resources>
